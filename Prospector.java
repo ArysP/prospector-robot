@@ -18,23 +18,46 @@ public class Prospector extends Robot
 
  // fill this in
  public void findNextDirection() {
-   faceSouth();
-
-
+   if (anyBeepersInBeeperBag()) {
+     pickBeeper();
+   } else {
+     faceSouth();
+     }
  } // end of findNextDirection . . .
 
  // fill this in
  public void faceNorth() {
-
-    } // end-faceNorth
+   if (facingSouth()) {
+     turnLeft();
+     turnLeft();
+   } 
+   if (facingWest()) {
+     turnRight();
+   }
+   if (facingEast()) {
+     turnLeft();
+   }
+   else {
+     facingNorth();
+   }
+} // end-faceNorth
 
  // fill this in
  public void faceSouth() {
-   if (facingSouth());{
-   return
-   } else {
-     turnLeft());
+   if (facingNorth()) {
+     turnLeft();
+     turnLeft();
+   } 
+   if (facingWest()) {
+     turnLeft();
+   }
+   if (facingEast()) {
+     turnRight();
+   }
+   else {
+     facingSouth();
+   }
 }
  }// end faceSouth
 
-} // end of class
+ // end of class

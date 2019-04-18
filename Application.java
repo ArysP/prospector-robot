@@ -7,8 +7,8 @@ public class Application implements Directions {
      Prospector Paul = new Prospector(1, 1, East, 0);
      Prospector Pauline = new Prospector(2, 2, West, 0);
 
-Paul.faceSouth();
-Pauline.faceSouth();
+Paul.findNextDirection();
+Pauline.findNextDirection();
  } // end-main
 
  static {
