@@ -9,6 +9,8 @@ public class Application implements Directions {
 
 Paul.findNextDirection();
 Pauline.findNextDirection();
+Paul.turnOff();
+Pauline.turnOff();
  } // end-main
 
  static {

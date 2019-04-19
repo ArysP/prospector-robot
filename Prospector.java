@@ -18,11 +18,14 @@ public class Prospector extends Robot
 
  // fill this in
  public void findNextDirection() {
-   if (anyBeepersInBeeperBag()) {
+   if (nextToABeeper()); {
+    pickBeeper();
+    faceNorth();
+   }  
+   if (nextToABeeper()); {
      pickBeeper();
-   } else {
-     faceSouth();
-     }
+    faceSouth();
+   }
  } // end of findNextDirection . . .
 
  // fill this in
